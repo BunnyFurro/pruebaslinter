@@ -32,4 +32,4 @@ jobs:
         run: gradle test -p pet
 
       - name: Verificación de Calidad con Linters
-        run: gradle PetApplication -p pet
+        run: gradle lint -p pet
