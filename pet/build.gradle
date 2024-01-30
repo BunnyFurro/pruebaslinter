@@ -38,10 +38,11 @@ tasks.named('test') {
 
 spotless {
     java {
-        googleJavaFormat()
+        format 'com.google.googlejavaformat:google-java-format:1.11.0'
         // Puedes personalizar aún más aquí según tus preferencias
     }
 }
+
 
 tasks {
     spotlessCheck {
