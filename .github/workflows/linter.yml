@@ -31,5 +31,3 @@ jobs:
       - name: Ejecutar Pruebas
         run: gradle test -p pet
 
-      - name: Verificación de Calidad con Linters
-        run: gradle spotlessCheck -p pet

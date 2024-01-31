@@ -43,8 +43,3 @@ spotless {
     }
 }
 
-tasks {
-    spotlessCheck {
-        dependsOn 'spotlessJava'
-    }
-}
