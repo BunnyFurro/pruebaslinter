@@ -35,11 +35,8 @@ jobs:
       - name: Configuración de Gradle
         uses: gradle/gradle-build-action@v2
 
-      - name: Compilar el proyecto
-        run: gradle build -p pet
-
-      - name: Ejecutar Pruebas
-        run: gradle test -p pet
-
-      - name: Verificación de calidad con lint
-        run: gradle check -p pet
+      - name: Compilar, Ejecutar Pruebas y Verificación de calidad con lint
+        run: |
+          gradle build -p pet
+          gradle test -p pet
+          gradle check -p pet
